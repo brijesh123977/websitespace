@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    padding-left: 15px;
+    padding-right:15px;
+}
+
+body{
+    background-image: url('images/Bitmap.png');
+    background-size : cover;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.menubar{
+    display: flex;
+    background-color: rgba(211, 190, 190, 0);
+    backdrop-filter: blur(30px);
+    padding: 28px;
+}
+
+.menubar p{
+    font-weight: 100;   
+}
+.menubar a{
+    text-decoration: none;   
+    position: relative;
+    font-family: BarlowCondensed;
+}
+
+.menubar a::before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: all .5s;
+}
+
+.menubar a:hover::before{
+    width: 100%;
+}
+
+.line{
+    border: 1px solid white;
+    width: 660px;
+    left: 140px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: Bellefair;
+    src: url('fonts/Bellefair-Regular.ttf');
+}
+@font-face{
+    font-family: Barlow;
+    src: url('fonts/Barlow-Regular.ttf');
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+
+.hero #content-1{
+    font-family: BarlowCondensed;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.72px; 
+    color: #D0D6F9;
+}
+
+.hero #content-2{
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 150px;
+}
+
+.hero #content-3{
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D0D6F9;
+}
+
+.explore{
+    background-color: white;
+    height: 274px;
+    width: 274px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    margin-top: 30px;
+}
+.explore #explore{
+    font-family: Bellefair;
+    color: #0B0D17;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
